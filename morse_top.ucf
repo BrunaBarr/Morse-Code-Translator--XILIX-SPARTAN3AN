@@ -1,0 +1,29 @@
+#------------------------------------------------------------------------------
+# morse_top.ucf - Spartan-3A/3AN Starter Kit (XC3S700A / XC3S700AN, FG484)
+# Pin locations taken from UG334 (v1.1).
+#------------------------------------------------------------------------------
+
+# 50 MHz clock (UG334, chapter 3)
+NET "CLK_50MHZ" LOC = "E12" | IOSTANDARD = LVCMOS33 ;
+NET "CLK_50MHZ" PERIOD = 20.0ns HIGH 40% ;
+
+# Reset button (chapter 2)
+NET "BTN_WEST" LOC = "U15" | IOSTANDARD = LVCMOS33 | PULLDOWN ;
+
+# PS/2 keyboard, primary connection (chapter 8)
+# UG334: the PS/2 pins must ALWAYS use LVCMOS33 with PULLUP.
+NET "PS2_CLK1"  LOC = "W12" | IOSTANDARD = LVCMOS33 | PULLUP ;
+NET "PS2_DATA1" LOC = "V11" | IOSTANDARD = LVCMOS33 | PULLUP ;
+
+# Character LCD, 8-bit interface (chapter 5)
+NET "LCD_E"     LOC = "AB4"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+NET "LCD_RS"    LOC = "Y14"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+NET "LCD_RW"    LOC = "W13"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+NET "LCD_DB<7>" LOC = "Y15"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+NET "LCD_DB<6>" LOC = "AB16" | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+NET "LCD_DB<5>" LOC = "Y16"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+NET "LCD_DB<4>" LOC = "AA12" | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+NET "LCD_DB<3>" LOC = "AB12" | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+NET "LCD_DB<2>" LOC = "AB17" | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+NET "LCD_DB<1>" LOC = "AB18" | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+NET "LCD_DB<0>" LOC = "Y13"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
