@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
--- File       : tb_ps2_kbd.vhd
+-- File: tb_ps2_kbd.vhd
 -- Description: Self-checking testbench for ps2_rx + kbd_decoder.
 --              A procedure plays the role of the keyboard and sends real
 --              PS/2 frames (start, 8 data bits LSB first, odd parity, stop)
