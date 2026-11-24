@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
--- File       : morse_decoder.vhd
+-- File: morse_decoder.vhd
 -- Description: Combinational ROM: Morse code -> ASCII character.
 -------------------------------------------------------------------------------
 library ieee;
