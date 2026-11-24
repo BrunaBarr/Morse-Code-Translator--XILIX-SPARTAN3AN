@@ -1,6 +1,6 @@
 -------------------------------------------------------------------------------
--- File       : morse_encoder.vhd
--- Project    : Morse code translator (EEL480 - TP1)
+-- File: morse_encoder.vhd
+-- Project: Morse code translator (EEL480 - TP1)
 -- Description: Combinational ROM: ASCII character -> Morse code.
 --              Covers A-Z and 0-9 (International Morse Code, ITU-R M.1677).
 --
