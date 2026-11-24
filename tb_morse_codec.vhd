@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
--- File       : tb_morse_codec.vhd
+-- File: tb_morse_codec.vhd
 -- Description: Self-checking testbench for morse_encoder and morse_decoder.
 -------------------------------------------------------------------------------
 library ieee;
