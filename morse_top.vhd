@@ -1,14 +1,7 @@
 -------------------------------------------------------------------------------
--- File       : morse_top.vhd
--- Project    : Morse code translator (EEL480 - TP1)
--- Board      : Spartan-3A/3AN Starter Kit (XC3S700A-4FG484)
+-- File: morse_top.vhd
 -- Description: Top level. Only connects the blocks to each other and to the
---              board pins (structural description).
---
---   PS/2 --> ps2_rx --> kbd_decoder --> morse_encoder --> morse_ctrl --> lcd_ctrl --> LCD
---                                                          |    ^
---                                          morse_decoder <-+----+
---
+board pins 
 -- User interface:
 --   PS/2 keyboard : input (see morse_ctrl for the keys)
 --   LCD           : output (line 1 = text, line 2 = Morse / mode)
@@ -95,7 +88,7 @@ begin
       ps2_data => PS2_DATA1,
       data_o   => scan_code,
       valid_o  => scan_valid,
-      error_o  => open           -- bad frames are simply dropped
+      error_o  => open           -- bad frames are dropped
     );
 
   u_kbd : entity work.kbd_decoder

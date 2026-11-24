@@ -1,18 +1,7 @@
 -------------------------------------------------------------------------------
--- File       : kbd_decoder.vhd
--- Project    : Morse code translator (EEL480 - TP1)
+-- File: kbd_decoder.vhd
 -- Description: Turns the byte stream of a PS/2 keyboard (scan code set 2)
---              into "key pressed" events carrying an ASCII code.
---
--- What the keyboard sends:
---   key pressed          : <code>            e.g. 'A' -> 1C
---   key released         : F0 <code>         e.g. 'A' -> F0 1C
---   extended key pressed : E0 <code>         e.g. keypad Enter -> E0 5A
---   extended key released: E0 F0 <code>
---   key held down        : <code> repeated about every 100 ms (typematic)
---
--- Only key presses of known keys produce an event. Releases are ignored.
--- Special keys are mapped to ASCII control codes (see morse_pkg).
+-- into "key pressed" events carrying an ASCII code.
 -------------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;

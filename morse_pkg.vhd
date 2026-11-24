@@ -1,7 +1,5 @@
 -------------------------------------------------------------------------------
 -- File       : morse_pkg.vhd
--- Project    : Morse code translator (EEL480 - TP1)
--- Board      : Spartan-3A/3AN Starter Kit (UG334)
 -- Description: Types, constants and helper functions shared by all blocks.
 -------------------------------------------------------------------------------
 library ieee;

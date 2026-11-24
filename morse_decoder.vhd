@@ -1,13 +1,6 @@
 -------------------------------------------------------------------------------
 -- File       : morse_decoder.vhd
--- Project    : Morse code translator (EEL480 - TP1)
 -- Description: Combinational ROM: Morse code -> ASCII character.
---              It is the inverse of morse_encoder. Sequences that are not a
---              letter or a digit return '?'.
---
--- Input format (see morse_pkg):
---   len_i  : number of symbols (1 to 5)
---   code_i : first symbol in bit 4, '0' = dot, '1' = dash
 -------------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;

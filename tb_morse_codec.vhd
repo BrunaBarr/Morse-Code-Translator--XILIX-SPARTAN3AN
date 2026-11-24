@@ -1,12 +1,6 @@
 -------------------------------------------------------------------------------
 -- File       : tb_morse_codec.vhd
 -- Description: Self-checking testbench for morse_encoder and morse_decoder.
---   1. Round trip: for every letter and digit, encode then decode and check
---      that we get the same character back.
---   2. Spot checks of known codes (A, S, O, 0, 5).
---   3. Exhaustive: all 62 possible sequences of 1 to 5 symbols; exactly 36
---      must decode to a character, the other 26 must give '?'.
---   4. Characters without Morse code must give valid = '0'.
 -------------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;
@@ -85,7 +79,7 @@ begin
     end loop;
 
     ---------------------------------------------------------------------------
-    -- 2. spot checks                     (1 = dash, 0 = dot, first on the left)
+    -- 2. spot checks (1 = dash, 0 = dot, first on the left)
     ---------------------------------------------------------------------------
     check_code('A', 2, "01000");  -- .-
     check_code('S', 3, "00000");  -- ...

@@ -1,20 +1,11 @@
 -------------------------------------------------------------------------------
--- File       : morse_ctrl.vhd
--- Project    : Morse code translator (EEL480 - TP1)
+-- File: morse_ctrl.vhd
 -- Description: Main control unit (finite state machine + text buffer).
 --
 -- Two modes, toggled with the TAB key:
---
---   TX (text -> Morse): the user types letters/digits. Each character is
---       added to line 1 and its Morse code is shown on line 2.
---         LCD:  |SOS             |
---               |TX> S = ...     |
---
---   RX (Morse -> text): the user types '.' and '-' (up to 5 symbols) and
---       confirms with ENTER. The decoded character ('?' if invalid) is added
---       to line 1.
---         LCD:  |SOS R           |
---               |RX> .-.   = R   |
+--  TX (text -> Morse): the user types letters/digits.
+--  RX (Morse -> text): the user types '.' and '-' (up to 5 symbols) and
+--       confirms with ENTER. 
 --
 --   Keys valid in both modes: SPACE adds a space, BACKSPACE erases,
 --   ESC clears everything, TAB switches the mode.

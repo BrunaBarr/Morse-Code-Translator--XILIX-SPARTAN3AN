@@ -1,23 +1,7 @@
 -------------------------------------------------------------------------------
--- File       : lcd_ctrl.vhd
--- Project    : Morse code translator (EEL480 - TP1)
+-- File:        lcd_ctrl.vhd
 -- Description: Controller for the 2x16 character LCD of the Spartan-3A
---              Starter Kit (Sitronix ST7066U, HD44780 compatible), using the
---              8-bit data interface (UG334, chapter 5).
---
--- The rest of the design only has to put the text in line1_i and line2_i.
--- This block:
---   1. waits for the display to power up,
---   2. sends the initialization commands,
---   3. then rewrites the 32 characters forever (about 600 times per second),
---      so any change in line1_i / line2_i shows up automatically.
---
--- Write cycle (LCD_RW is always '0' because we never read the display):
---
---   LCD_RS, LCD_DB  ==X=========== valid ===========X==
---   LCD_E           ______/‾‾‾‾‾‾‾‾‾‾\_______________
---                   |setup|  pulse   |  wait (execution time)  |
---                   >40ns   >230ns     >40us (>1.64ms after Clear)
+--              Starter Kit using the 8-bit data interface
 -------------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;

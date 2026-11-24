@@ -1,13 +1,6 @@
 -------------------------------------------------------------------------------
 -- File       : tb_morse_top.vhd
 -- Description: System testbench for morse_top.
---   * A keyboard model types keys (make code + F0 + code, like a real one).
---   * An LCD model listens to LCD_E/RS/DB exactly like the HD44780 does,
---     keeps its own DD RAM, and checks the setup time and the E pulse width.
---   * After each group of keys, the test compares what the "display" shows
---     with the expected text.
---   The LCD waits and the PS/2 timeout are shortened with the generics so
---   the whole simulation runs in a few seconds.
 -------------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;
