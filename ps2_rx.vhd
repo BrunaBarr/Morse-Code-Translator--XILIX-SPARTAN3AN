@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
--- File       : ps2_rx.vhd
+-- File: ps2_rx.vhd
 -- Description: PS/2 receiver (keyboard -> FPGA only).
 --
 -- The keyboard sends 11-bit frames, least significant data bit first
