@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
--- File       : tb_morse_top.vhd
+-- File: tb_morse_top.vhd
 -- Description: System testbench for morse_top.
 -------------------------------------------------------------------------------
 library ieee;
