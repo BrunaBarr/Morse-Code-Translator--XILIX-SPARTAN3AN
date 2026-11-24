@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
--- File       : morse_pkg.vhd
+-- File: morse_pkg.vhd
 -- Description: Types, constants and helper functions shared by all blocks.
 -------------------------------------------------------------------------------
 library ieee;
