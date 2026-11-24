@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
--- File:        lcd_ctrl.vhd
+-- File: lcd_ctrl.vhd
 -- Description: Controller for the 2x16 character LCD of the Spartan-3A
 --              Starter Kit using the 8-bit data interface
 -------------------------------------------------------------------------------
